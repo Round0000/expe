@@ -1080,9 +1080,9 @@
       let maxHue = 20;
 
       setInterval(() => {
-        minHue++;
-        maxHue++;
-      }, 100);
+        minHue += 2;
+        maxHue += 2;
+      }, 500);
 
       function paint() {
         frame.querySelectorAll("div").forEach((el) => {
