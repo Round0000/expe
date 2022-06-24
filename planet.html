@@ -13,11 +13,12 @@
         align-items: center;
         height: 100vh;
         background-color: #000;
+        overflow: hidden;
       }
 
       #frame {
-        width: 64vmin;
-        height: 64vmin;
+        width: 70vmin;
+        height: 70vmin;
         display: grid;
         grid-template-columns: repeat(32, 1fr);
         grid-template-rows: repeat(32, 1fr);
@@ -25,6 +26,8 @@
         overflow: hidden;
         animation: rotate infinite linear forwards 120s;
         filter: drop-shadow(6px 2px 50px #fff5);
+        opacity: 0;
+        transition: opacity 2s;
       }
 
       @keyframes rotate {
@@ -1066,6 +1069,39 @@
       <div></div>
     </div>
 
-    <script src="app.js"></script>
+    <script>
+      function getRandom(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      let minHue = 0;
+      let maxHue = 20;
+
+      setInterval(() => {
+        minHue++;
+        maxHue++;
+      }, 100);
+
+      function paint() {
+        frame.querySelectorAll("div").forEach((el) => {
+          el.style.backgroundColor = `hsl(${getRandom(
+            minHue,
+            maxHue
+          )}, 100%, ${getRandom(0, 100)}%)`;
+          el.style.transform = `scale(${getRandom(0, 4) / 2})`;
+        });
+      }
+
+      setTimeout(() => {
+        paint();
+      }, 500);
+      frame.style.opacity = 1;
+
+      setInterval(() => paint(), 3000);
+
+      console.log(frame.querySelectorAll("div").length);
+    </script>
   </body>
 </html>
