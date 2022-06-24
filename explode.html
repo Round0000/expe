@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>expe - Explode</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    #backHome {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: .5em 1em;
+      color: transparent;
+      transition: all .3s;
+    }
+
+    #backHome:hover,
+    #backHome:focus {
+      background-color: black;
+      color: orange;
+    }
+
+    body {
+      font-family: "Atkinson Hyperlegible", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #111;
+    }
+
+    #frame {
+      width: 80vw;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      overflow: hidden;
+      /* gap: 4vmin; */
+      flex-wrap: wrap;
+    }
+
+    .orange {
+      background: linear-gradient(to top, #000 20%, #fff 10%);
+    }
+    .blue {
+      background-color: rgb(8, 110, 179);
+    }
+    .black {
+      background-color: #000;
+    }
+    .white {
+      background: linear-gradient(to top, #000 20%, #fff 10%);
+    }
+    .red {
+      background-color: crimson;
+    }
+
+    #frame div {
+      transition: all 6s ease-out;
+      border: 2px solid #000;
+      position: relative;
+      display: grid;
+      place-items: center;
+    }
+
+    #frame div::before {
+      content: "";
+      position: absolute;
+      height: 50%;
+      width: 2px;
+      background-color: #000;
+      top: 0;
+      left: calc(50% - 2px);
+    }
+
+    .black {
+      width: 10vmin;
+      height: 10vmin;
+    }
+
+    .orange {
+      width: 75%;
+      height: 75%;
+    }
+
+    .white {
+      width: 75%;
+      height: 75%;
+    }
+  </style>
+  <body>
+    <a id="backHome" href="index.html">index.html</a>
+
+    <div id="frame">
+      <div class="black">
+        <div class="orange">
+          <div class="white">
+            <div class="white">
+              <div class="orange">
+                <div class="white">
+                  <div class="orange"></div>
+                </div>
+              </div>
+            </div>
+            <div class="white">
+              <div class="orange">
+                <div class="white">
+                  <div class="orange"></div>
+                </div>
+              </div>
+            </div>
+            <div class="white">
+              <div class="orange">
+                <div class="white">
+                  <div class="orange"></div>
+                </div>
+              </div>
+            </div>
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="black">
+        <div class="orange">
+          <div class="white">
+            <div class="white">
+              <div class="orange">
+                <div class="white">
+                  <div class="orange"></div>
+                </div>
+              </div>
+            </div>
+            <div class="white">
+              <div class="orange">
+                <div class="white">
+                  <div class="orange"></div>
+                </div>
+              </div>
+            </div>
+            <div class="white">
+              <div class="orange">
+                <div class="white">
+                  <div class="orange"></div>
+                </div>
+              </div>
+            </div>
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="black">
+        <div class="orange">
+          <div class="white">
+            <div class="white">
+              <div class="orange">
+                <div class="white">
+                  <div class="orange"></div>
+                </div>
+              </div>
+            </div>
+            <div class="white">
+              <div class="orange">
+                <div class="white">
+                  <div class="orange"></div>
+                </div>
+              </div>
+            </div>
+            <div class="white">
+              <div class="orange">
+                <div class="white">
+                  <div class="orange"></div>
+                </div>
+              </div>
+            </div>
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="black">
+        <div class="orange">
+          <div class="white">
+            <div class="white">
+              <div class="orange">
+                <div class="white">
+                  <div class="orange"></div>
+                </div>
+              </div>
+            </div>
+            <div class="white">
+              <div class="orange">
+                <div class="white">
+                  <div class="orange"></div>
+                </div>
+              </div>
+            </div>
+            <div class="white">
+              <div class="orange">
+                <div class="white">
+                  <div class="orange"></div>
+                </div>
+              </div>
+            </div>
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orange">
+          <div class="white">
+            <div class="orange">
+              <div class="white">
+                <div class="orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function getRandom(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      function explode() {
+        document.querySelectorAll(`#frame div`).forEach((item) => {
+          item.style.transform = `rotate(${getRandom(
+            -45,
+            45
+          )}deg) rotateY(${getRandom(-45, 45)}deg)  rotateZ(${getRandom(-45, 45)}deg) translateY(${getRandom(
+            -20,
+            20
+          )}vmin) translateX(${getRandom(-20, 20)}vmin)`;
+
+          setTimeout(() => {
+            item.style.transform = "";
+          }, 8000);
+        });
+      }
+
+      // setInterval(() => {
+      //   explode();
+      // }, 4000);
+
+      document.addEventListener("click", (e) => {
+        explode();
+      });
+    </script>
+  </body>
+</html>

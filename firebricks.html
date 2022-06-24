@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>expe - Firebricks</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    #backHome {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: .5em 1em;
+      color: transparent;
+      transition: all .3s;
+    }
+
+    #backHome:hover,
+    #backHome:focus {
+      background-color: black;
+      color: orange;
+    }
+
+    body {
+      font-family: "Atkinson Hyperlegible", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #frame {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background-color: #000;
+      gap: 4px;
+      padding: 5vmin;
+    }
+
+    .line {
+      height: 16px;
+
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .cell {
+      background-color: orangered;
+      width: 4px;
+      transition: all 3s ease-out;
+    }
+  </style>
+  <body>
+    <a id="backHome" href="index.html">index.html</a>
+
+    <div id="frame">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+
+    </div>
+
+    <script>
+      function getRandom(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      document.querySelectorAll(".line").forEach((line) => {
+        for (let i = 0; i < 16; i++) {
+          const cell = document.createElement("DIV");
+          cell.classList.add("cell");
+          line.appendChild(cell);
+        }
+      });
+
+      setInterval(() => {
+        const cells = document.querySelectorAll(`.cell`);
+
+        cells[getRandom(0, cells.length - 1)].style.flex = "1";
+        cells[getRandom(0, cells.length - 1)].style.flex = "1";
+        cells[getRandom(0, cells.length - 1)].style.flex = "1";
+        cells[getRandom(0, cells.length - 1)].style.flex = "1";
+        cells[getRandom(0, cells.length - 1)].style.flex = "1";
+        cells[getRandom(0, cells.length - 1)].style.flex = "1";
+        cells[getRandom(0, cells.length - 1)].style.flex = "1";
+        cells[getRandom(0, cells.length - 1)].style.flex = "1";
+        cells[getRandom(0, cells.length - 1)].style.flex = "1";
+        cells[getRandom(0, cells.length - 1)].style.flex = "1";
+        cells[getRandom(0, cells.length - 1)].style.flex = "1";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+        cells[getRandom(0, cells.length - 1)].style.flex = "unset";
+
+        cells[getRandom(0, cells.length - 1)].style.background = "#000";
+        cells[getRandom(0, cells.length - 1)].style.background = "darkred";
+        cells[getRandom(0, cells.length - 1)].style.background = "firebrick";
+        cells[getRandom(0, cells.length - 1)].style.background = "lightsalmon";
+        cells[getRandom(0, cells.length - 1)].style.background = "orangered";
+        cells[getRandom(0, cells.length - 1)].style.background = "orangered";
+        cells[getRandom(0, cells.length - 1)].style.background = "orangered";
+        cells[getRandom(0, cells.length - 1)].style.background = "orangered";
+        cells[getRandom(0, cells.length - 1)].style.background = "orangered";
+        cells[getRandom(0, cells.length - 1)].style.background = "darkred";
+        cells[getRandom(0, cells.length - 1)].style.background = "firebrick";
+        cells[getRandom(0, cells.length - 1)].style.background = "lightsalmon";
+        cells[getRandom(0, cells.length - 1)].style.background = "orangered";
+        cells[getRandom(0, cells.length - 1)].style.background = "orangered";
+        cells[getRandom(0, cells.length - 1)].style.background = "orangered";
+        cells[getRandom(0, cells.length - 1)].style.background = "orangered";
+        cells[getRandom(0, cells.length - 1)].style.background = "orangered";
+        cells[getRandom(0, cells.length - 1)].style.background = "orangered";
+
+        cells[getRandom(0, cells.length - 1)].style.transform =
+          "translateY(-200vh)";
+        cells[getRandom(0, cells.length - 1)].style.transform = "unset";
+      }, 300);
+    </script>
+  </body>
+</html>
